@@ -6,6 +6,7 @@
     display: block;
     max-width: 25rem;
     margin-bottom: 15px;
+    box-shadow: 1px 10px 15px $grey;
     .portfolio-item-caption {
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s;
@@ -60,4 +61,8 @@
       }
     }
   }
+}
+
+#portfolio-text {
+  color: $grey;
 }
