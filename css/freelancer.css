@@ -149,12 +149,10 @@ section h2 {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #333;
-    background: #ceaf00;
+    color: #ceaf00;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #333;
-    background: #ceaf00;
+    color: #ceaf00;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;

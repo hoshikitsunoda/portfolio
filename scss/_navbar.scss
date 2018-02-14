@@ -47,13 +47,11 @@
       margin-top: 0;
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
-      color: $grey;
-      background: $primary;
+      color: $primary;
       &:active,
       &:focus,
       &:hover {
-        color: $grey;
-        background: $primary;
+        color: $primary;
       }
     }
   }
