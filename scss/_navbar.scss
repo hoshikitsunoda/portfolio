@@ -1,26 +1,26 @@
 // Styling for the navbar
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   @include heading-font;
   .navbar-brand {
-    color: $white;
+    color: $grey;
   }
   .navbar-nav {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
     li.nav-item {
       a.nav-link {
-        color: $white;
+        color: $grey;
         &:hover {
           color: $primary;
+          animation: gold-glow 0.1s ease-out;
         }
         &:active,
         &:focus {
-          color: $white;
+          color: $grey;
         }
         &.active {
           color: $primary;
+          animation: gold-glow 0.1s ease-out;
         }
       }
     }
@@ -32,8 +32,6 @@
 }
 @media(min-width:992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -47,21 +45,45 @@
       margin-top: 0;
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
-      color: $white;
-      background: $primary;
+      color: $primary;
+      animation: gold-glow 0.1s ease-out;
       &:active,
       &:focus,
       &:hover {
-        color: $white;
-        background: $primary;
+        color: $primary;
+        animation: gold-glow 0.1s ease-out;
       }
     }
   }
   #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     .navbar-brand {
       font-size: 1.5em;
     }
+  }
+}
+
+@-webkit-keyframes gold-glow {
+  from {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #fff,
+      0 0 20px $primary,
+      0 0 30px $primary,
+      0 0 40px $primary,
+      0 0 50px $primary,
+      0 0 70px $primary;
+  }
+
+  to {
+    text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px $primary,
+      0 0 7px $primary,
+      0 0 10px $primary,
+      0 0 12px $primary,
+      0 0 15px $primary;
   }
 }
