@@ -4,20 +4,20 @@
   padding-bottom: 1rem;
   @include heading-font;
   .navbar-brand {
-    color: $white;
+    color: $grey;
   }
   .navbar-nav {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
     li.nav-item {
       a.nav-link {
-        color: $white;
+        color: $grey;
         &:hover {
           color: $primary;
         }
         &:active,
         &:focus {
-          color: $white;
+          color: $grey;
         }
         &.active {
           color: $primary;
@@ -47,12 +47,12 @@
       margin-top: 0;
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
-      color: $white;
+      color: $grey;
       background: $primary;
       &:active,
       &:focus,
       &:hover {
-        color: $white;
+        color: $grey;
         background: $primary;
       }
     }
