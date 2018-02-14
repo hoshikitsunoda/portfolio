@@ -103,3 +103,7 @@ section {
   color: $gray-100;
   text-shadow: 1px 2px 0 black;
 }
+
+.mt-4 .about-paragraph:hover {
+  text-shadow: none;
+}
