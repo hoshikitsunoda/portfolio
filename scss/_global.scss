@@ -107,3 +107,8 @@ section {
 .mt-4 .about-paragraph:hover {
   text-shadow: none;
 }
+
+.project-title {
+  color: $grey;
+  text-shadow: 1px 2px 0 $shadow;
+}
