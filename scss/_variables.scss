@@ -1,7 +1,7 @@
 // Variables
 
 $white: #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: rgba(248, 249, 250, 0.8) !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -12,7 +12,7 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$grey: #495057 !default;
+$grey: rgba(73, 80, 87, 0.8) !default;
 
 $primary: #ceaf00 !default;
 $shadow: #adb5bd;
