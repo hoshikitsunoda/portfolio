@@ -1,10 +1,16 @@
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: $secondary;
-  color: $white;
+  background: $reverseGradient;
+  color: $gray-100;
+  text-shadow: 1px 2px 0 $gray-700;
 }
 
 .copyright {
   background-color: darken($secondary, 10%);
+}
+
+#bottom-footer {
+  background: $darkGradient;
+  color: rgba(248, 249, 250, 0.6);
 }
