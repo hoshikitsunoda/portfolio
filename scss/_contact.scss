@@ -52,3 +52,8 @@
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid $gray-200;
 }
+
+#contact-text {
+  color: $grey;
+  text-shadow: 1px 2px 0 $gray-400;
+}
