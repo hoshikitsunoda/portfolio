@@ -1,0 +1,8 @@
+@mixin body-font() {
+  font-family: 'Proza Libre', sans-serif;
+}
+
+@mixin heading-font() {
+  font-weight: 700;
+  font-family: 'Cormorant Garamond', serif;
+}

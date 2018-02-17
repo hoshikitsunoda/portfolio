@@ -1,0 +1,38 @@
+header.masthead {
+  padding-top: calc(6rem + 72px);
+  padding-bottom: 6rem;
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: $grey;
+  }
+  h2 {
+    font-size: 1.3rem;
+    @include body-font;
+    color: $grey;
+    opacity: 0.6;
+  }
+}
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(6rem + 106px);
+    padding-bottom: 6rem;
+    h1 {
+      font-size: 3.5em;
+      line-height: 4rem;
+      color: $grey;
+      letter-spacing: 0.1rem;
+    }
+    h2 {
+      font-size: 1.75em;
+      color: $grey;
+      opacity: 0.6;
+    }
+
+  }
+}
+
+#header-text {
+  padding-bottom: 2rem;
+  text-shadow: 2.5px 3px 0 $gray-400;
+}

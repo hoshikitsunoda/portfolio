@@ -1,0 +1,90 @@
+// Styling for the navbar
+#mainNav {
+  @include heading-font;
+  .navbar-brand {
+    color: $grey;
+    text-shadow: 1px 2px 0 $shadow;
+  }
+  .navbar-nav {
+    margin-top: 1rem;
+    letter-spacing: 0.0625rem;
+    li.nav-item {
+      a.nav-link {
+        color: $grey;
+        &:hover {
+          color: $primary;
+          animation: gold-glow 0.1s ease-out;
+        }
+        &:active,
+        &:focus {
+          color: $grey;
+        }
+        &.active {
+          color: $primary;
+          animation: gold-glow 0.1s ease-out;
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem;
+  }
+}
+@media(min-width:992px) {
+  #mainNav {
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    .navbar-brand {
+      font-size: 2em;
+      -webkit-transition: font-size 0.3s;
+      -moz-transition: font-size 0.3s;
+      transition: font-size 0.3s;
+    }
+    .navbar-nav {
+      margin-top: 0;
+    }
+    .navbar-nav > li.nav-item > a.nav-link.active {
+      color: $primary;
+      animation: gold-glow 0.1s ease-out;
+      &:active,
+      &:focus,
+      &:hover {
+        color: $primary;
+        animation: gold-glow 0.1s ease-out;
+      }
+    }
+  }
+  #mainNav.navbar-shrink {
+    .navbar-brand {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@-webkit-keyframes gold-glow {
+  from {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 8px #fff,
+      0 0 12px $primary,
+      0 0 16px $primary,
+      0 0 20px $primary,
+      0 0 25px $primary,
+      0 0 30px $primary;
+  }
+
+  to {
+    text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px $primary,
+      0 0 7px $primary,
+      0 0 10px $primary,
+      0 0 12px $primary,
+      0 0 15px $primary;
+  }
+}
