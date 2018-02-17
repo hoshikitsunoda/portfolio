@@ -1,5 +1,5 @@
 var typed = new Typed('.element', {
-    strings: ['website', 'application', 'user interface', 'graphic'],
+    strings: ['websites', 'applications', 'user interfaces', 'graphics'],
     typeSpeed: 60,
     smartBackspace: true,
     loop: true
